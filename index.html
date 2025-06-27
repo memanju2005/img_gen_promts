@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Gallery - Stunning Transformations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating particles -->
+    <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+    <div class="particle" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
+    <div class="particle" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+    <div class="particle" style="top: 40%; left: 90%; animation-delay: 4s;"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">✨ AI Gallery</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1>Transform Your Images</h1>
+            <p>Discover stunning AI-generated transformations with our curated collection</p>
+        </section>
+
+        <!-- Trending Images Section -->
+        <section class="trending" id="trending">
+            <h2 class="section-title">✨ Trending Now</h2>
+            <div class="trending-container">
+                <div class="trending-showcase">
+                    <div class="trending-image active"
+                        style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Cyberpunk Portrait</h3>
+                            <p>Futuristic neon-lit transformation</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Renaissance Masterpiece</h3>
+                            <p>Classical art style transformation</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Fantasy Warrior</h3>
+                            <p>Epic fantasy character design</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1494790108755-2616c9b92e52?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Golden Hour Magic</h3>
+                            <p>Stunning sunset portrait effect</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Anime Style</h3>
+                            <p>Japanese animation transformation</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=600&fit=crop&crop=face');">
+                        <div class="trending-overlay">
+                            <h3>Vintage Glamour</h3>
+                            <p>Old Hollywood elegance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+
+                <div class="trending-description">
+                    <p>Discover the most popular AI transformations that are captivating users worldwide. These stunning
+                        creations showcase the latest trends in AI-powered image generation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+            <h2 class="section-title">Explore Collections</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="showGallery('portrait')">
+                    <span class="category-icon">👤</span>
+                    <h3>Portrait Transformations</h3>
+                    <p>Stunning portrait edits with artistic styles, lighting effects, and creative enhancements</p>
+                </div>
+
+                <div class="category-card" onclick="showGallery('fullbody')">
+                    <span class="category-icon">🧍</span>
+                    <h3>Full Body Edits</h3>
+                    <p>Complete person transformations with outfit changes, backgrounds, and style modifications</p>
+                </div>
+
+                <div class="category-card" onclick="showGallery('group')">
+                    <span class="category-icon">👥</span>
+                    <h3>Group Photos</h3>
+                    <p>Multi-person image enhancements with coordinated styling and perfect compositions</p>
+                </div>
+
+                <div class="category-card" onclick="showGallery('artistic')">
+                    <span class="category-icon">🎨</span>
+                    <h3>Artistic Styles</h3>
+                    <p>Creative interpretations with painting effects, sketch styles, and artistic filters</p>
+                </div>
+
+                <div class="category-card" onclick="showGallery('fantasy')">
+                    <span class="category-icon">🦄</span>
+                    <h3>Fantasy & Cosplay</h3>
+                    <p>Magical transformations with fantasy elements, costumes, and imaginative scenes</p>
+                </div>
+
+                <div class="category-card" onclick="showGallery('professional')">
+                    <span class="category-icon">💼</span>
+                    <h3>Professional Headshots</h3>
+                    <p>Business-ready portraits with perfect lighting, backgrounds, and professional styling</p>
+                </div>
+
+                <div class="category-card coming-soon">
+                    <span class="category-icon">🌟</span>
+                    <h3>Wedding & Events</h3>
+                    <p>Perfect moments with romantic lighting and elegant transformations</p>
+                    <div class="coming-soon-badge">Coming Soon ✨</div>
+                </div>
+
+                <div class="category-card coming-soon">
+                    <span class="category-icon">🎭</span>
+                    <h3>Historical Eras</h3>
+                    <p>Time travel through different historical periods and cultures</p>
+                    <div class="coming-soon-badge">Coming Soon ✨</div>
+                </div>
+
+                <div class="category-card coming-soon">
+                    <span class="category-icon">🎪</span>
+                    <h3>Cartoon & Comics</h3>
+                    <p>Transform into your favorite cartoon or comic book character</p>
+                    <div class="coming-soon-badge">Coming Soon ✨</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Sections -->
+        <section class="gallery" id="portrait-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Portrait Transformations</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_001.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 1
+                    </div>
+                    <div class="image-info">
+                        <h3 class="image-title">Motion-blurred crowd</h3>
+                        <p class="image-description">Cinematic overhead</p>
+
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Overhead cinematic shot of me standing still on a red brick city sidewalk, wearing a dark oversized blazer. A fast-moving, motion-blurred crowd rushes past on all sides, creating a sense of isolation and contrast. The scene is lit with moody, natural lighting and captured in a 35mm film aesthetic with visible grain. Shallow depth of field keeps me in sharp focus while the background remains blurred. The atmosphere feels introspective and urban. Portrait orientation, 4:3 aspect ratio.')">
+                            Copy Prompt
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_002.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Ignition of Truth</h3>
+                        <p class="image-description"> Dramatic fire-lit contemplation</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Create a dramatic, low-light portrait of a person standing against a black background. The person is holding a newspaper labeled LATEST NEWS, which is partially on fire at one corner, with blue flames and a faint smoke trail. The fire should be stylized and visually striking. The lighting on the person should be moody and cinematic, primarily from the blue fire, casting blue highlights and shadows across the face and hands. The subject should wear a black shirt and layered silver chains for a bold, modern look. The expression should be serious and contemplative as the person looks down at the burning newspaper. The atmosphere should be intense and mysterious.Replace the face with the person from the uploaded photo, matching the lighting, skin tone, and perspectiverealistically. Keep the image high quality and photorealistic. ')">Copy
+                            Prompt</button>
+
+
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_003.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Smoke & Silence</h3>
+                        <p class="image-description">Elegant rebel in teal shadows</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'vintage glamour portrait, 1940s Hollywood style, classic lighting, elegant pose, black and white with gold accents, retro fashion')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_004.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">The Fighter's Focus</h3>
+                        <p class="image-description"> black-and-white portrait of a determined boxer styled image</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Create a dramatic, high-contrast black-and-white portrait of the person in the uploaded image. Style the person as a strong, focused boxer wearing a fitted dark athletic t-shirt with fists wrapped in tape. Set the subject against a bold red background. Use cinematic lighting with deep shadows and strong highlights to emphasize muscle tone and facial expression. The overall mood should be intense, powerful, and artistic — inspired by vintage boxing posters.')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_005.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Ignite the Gaze</h3>
+                        <p class="image-description">Cinematic close-up of a man lit by a lighter’s flame</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Cinematic close-up portrait of a young man holding a lighter in front of his face, serious intense expression, warm orange glow from the lighter flame illuminating his face, green soft light on one side of the face, red rim light on the hair and shoulder, dramatic shadows, dark black background, slight sweat on skin for glossy texture, red and black checkered shirt, wearing metallic chain bracelets, ultra-realistic details, sharp focus on eyes, moody low light photography style, shallow depth of field, high resolution, 8K, dramatic lighting')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_006.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Modern Muse</h3>
+                        <p class="image-description">Stylish portrait of a confident man adjusting a black hat</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Use the uploaded image of me to generate a high-quality, cinematic digital portrait. I want to be shown adjusting a wide-brimmed black hat with both hands, looking slightly off-camera with a calm and confident expression. The background should be clean and light beige. I should be wearing a cream or off-white ribbed sweater and a metallic dog tag necklace hanging in front of my chest.Lighting should be soft and studio-style:a warm front light casting smooth shadows on my face, and a teal rim light from the left (my right side) for dramatic color contrast. Make the skin look realistic with a smooth, slightly matte texture. Style it like a fashion magazine editorial shot, sharp focus, shallow depth of field, with ultra-clean professional look. ')">Copy
+                            Prompt</button>
+
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_007.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Silent Flame</h3>
+                        <p class="image-description"> man in a ‘shhh’ pose, set against a glowing red-orange gradient
+                        </p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Create a cinematic, ultra-dramatic digital portrait of a young man standing against a vibrant red-to-orange gradient background. He should be wearing a black sleeveless tank top, with one hand wrapped in black boxing tape. His hand is raised to his lips, index finger extended in a ‘shhh’ gesture or resting on his mouth, adding a mysterious and confident attitude. His facial expression is intense and focused, with a strong jawline highlighted by shadows. The lighting setup should include: a red key light from the front, intense shadows across one side of the face, and a bright orange-red backlight that creates a halo effect behind him. Use the uploaded image of me as the base for the subject. Match the lighting, pose, and style described above.High contrast, deep shadows, and vivid color tones are key. The background should be minimal and smooth with a glowing gradient. Emphasize muscle definition, realistic skin texture, and a professional studio look.')">Copy Prompt
+                        </button>
+                           
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder"
+                        style="background-image: url('assets/potraits/potrait_008.jpg'); background-size: cover; background-position: center; color: transparent;">
+                        Portrait Style 3</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Blue Vibes</h3>
+                        <p class="image-description">Confident studio portrait in a Lions jersey with headphones</p>
+                        <p class="image-source">
+                            Credit: <a href="https://t.me/krishuwork" target="_blank">Krishna_the_artist_0</a>
+                        </p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'Create a high-quality, studio-lit portrait of the same person from the uploaded image. He is wearing a bright blue Detroit Lions football jersey with the number 20 and LIONS text clearly visible. He is holding large black over-ear headphones with one hand gently pressing the earcup. His facial expression is confident and slightly smiling, looking straight into the camera with a relaxed and charismatic vibe. The background should be a clean, gradient blue with dramatic side lighting, giving a professional and cinematic look. The style should be photorealistic with sharp focus, vibrant colors, and high contrast. The final image should be 4K resolution, realistic skin texture, and fashion editorial lighting')">Copy
+                            Prompt</button>
+
+                    </div>
+                </div>
+                <div class="image-card coming-soon">
+                    <div class="image-placeholder">More Styles Coming Soon</div>
+                    <div class="image-info">
+                        <h3 class="image-title">New Portrait Styles</h3>
+                        <p class="image-description">Exciting new portrait transformations in development</p>
+                        <div class="coming-soon-badge">Coming Soon ✨</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="fullbody-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Full Body Transformations</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">Full Body Style 1</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Fashion Model</h3>
+                        <p class="image-description">High fashion runway look with designer clothing</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'full body fashion model, designer clothing, runway pose, professional studio lighting, modern fashion, high end style, detailed fabric textures')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder">Full Body Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Urban Explorer</h3>
+                        <p class="image-description">Street style with urban cityscape background</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'urban street style, full body shot, city background, casual trendy clothing, natural lighting, modern architecture, dynamic pose')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="group-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Group Photo Enhancements</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">Group Style 1</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Family Portrait</h3>
+                        <p class="image-description">Warm family gathering with perfect lighting</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'family group portrait, warm lighting, coordinated outfits, natural poses, studio quality, happy expressions, professional photography')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder">Group Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Friends Adventure</h3>
+                        <p class="image-description">Dynamic group shot with adventure theme</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'friends group photo, adventure theme, outdoor setting, dynamic poses, natural lighting, casual clothing, joyful expressions')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="artistic-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Artistic Transformations</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">Artistic Style 1</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Oil Painting</h3>
+                        <p class="image-description">Classical oil painting transformation with rich textures</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'oil painting style, classical portrait, rich brush strokes, renaissance lighting, detailed texture, artistic masterpiece, traditional art style')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder">Artistic Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Watercolor Dreams</h3>
+                        <p class="image-description">Soft watercolor effect with flowing colors</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'watercolor painting style, soft flowing colors, artistic brush effects, dreamy atmosphere, pastel palette, creative interpretation')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="fantasy-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Fantasy & Cosplay</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">Fantasy Style 1</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Elven Royalty</h3>
+                        <p class="image-description">Magical elf transformation with ethereal elements</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'elven fantasy character, magical transformation, ethereal lighting, fantasy costume, pointed ears, mystical atmosphere, detailed fantasy art')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder">Fantasy Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Superhero Transformation</h3>
+                        <p class="image-description">Epic superhero costume with dramatic effects</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'superhero transformation, epic costume design, dramatic lighting, action pose, powerful atmosphere, comic book style, detailed suit')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="professional-gallery">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2 class="section-title">Professional Headshots</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">Professional Style 1</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Executive Portrait</h3>
+                        <p class="image-description">Corporate executive with premium studio lighting</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'professional executive headshot, corporate attire, studio lighting, confident expression, business portrait, high quality, formal styling')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="image-placeholder">Professional Style 2</div>
+                    <div class="image-info">
+                        <h3 class="image-title">Creative Professional</h3>
+                        <p class="image-description">Modern creative professional with stylish background</p>
+                        <button class="copy-btn"
+                            onclick="copyPrompt(this, 'creative professional headshot, modern styling, contemporary background, confident pose, business casual, professional quality')">Copy
+                            Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">Prompt copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
